@@ -612,4 +612,26 @@ body {
   border-bottom-right-radius: 4px;
   overflow: hidden;
 }
+.v152_20,
+.v2006_48,
+.v2009_9 {
+  z-index: 3;
+  position: relative;
+}
+.v152_21,
+.v152_22 {
+  z-index: 3;
+  position: relative;
+}
+
+
+.fridge-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 844px;
+  z-index: 2; /* UNDER the buttons */
+}
+
 

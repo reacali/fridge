@@ -128,7 +128,7 @@ body {
   border-bottom-right-radius: 30px;
   overflow: hidden;
 }
-.v121_4 {
+.v121_4 { /* corresponds to Fast Meal Text */
   width: 235px;
   color: rgba(255,255,255,1);
   position: absolute;
@@ -217,12 +217,12 @@ body {
   left: 4px;
   overflow: hidden;
 }
-.v118_89 {
+.v118_89 { /* corresponds to Misc. Text */
   width: 54px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 86px;
-  left: 296px;
+  top: 40px; /* corresponds to Misc. up or down */
+  left: 290px; /* corresponds to Misc. left or right */
   font-family: Alata;
   font-weight: Regular;
   font-size: 24px;
@@ -294,12 +294,12 @@ body {
   left: 4px;
   overflow: hidden;
 }
-.v118_90 {
+.v118_90 { /* corresponds to  Protein Text */
   width: 74px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 96px;
-  left: 296px;
+  top: 44px; /* corresponds to Protein up or down */
+  left: 280px; /* corresponds to Protein left or right */
   font-family: Alata;
   font-weight: Regular;
   font-size: 24px;
@@ -371,12 +371,12 @@ body {
   left: 4px;
   overflow: hidden;
 }
-.v118_88 {
+.v118_88 { /* corresponds to Fruits & Veggies Text  */
   width: 85px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 101px;
-  left: 282px;
+  top: 28px; /* corresponds to Fruits & Veggies up or down */
+  left: 253px; /* corresponds to Fruits & Veggies left or right */
   font-family: Alata;
   font-weight: Regular;
   font-size: 24px;
@@ -448,12 +448,12 @@ body {
   left: 4px;
   overflow: hidden;
 }
-.v118_91 {
+.v118_91 { /* corresponds to Dairy Text  */
   width: 58px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 88px;
-  left: 296px;
+  top: 47px; /* corresponds to Dairy up or down */
+  left: 285px; /* corresponds to Dairy left or right */
   font-family: Alata;
   font-weight: Regular;
   font-size: 24px;

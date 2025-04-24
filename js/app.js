@@ -31,4 +31,4 @@ function loadScreen(screenName) {
       });
   }
   
-  window.onload = () => loadScreen('gen-recipes');
+  window.onload = () => loadScreen('home-screen'); //CHANGING THIS FOR NOW //

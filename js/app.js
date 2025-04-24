@@ -31,4 +31,4 @@ function loadScreen(screenName) {
       });
   }
   
-  window.onload = () => loadScreen('full-recipe');
+  window.onload = () => loadScreen('home-screen');

@@ -568,4 +568,39 @@ label input:checked + .edit-icon-wrapper + .unavailable-message {
   display: block;
 }
 
+.food-icon-chicken{
+  position: absolute;
+  top: 25px;
+  left: 130px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.food-icon-lettuce{
+  position: absolute;
+  top: 25px;
+  left: 130px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.food-icon-dressing{
+  position: absolute;
+  top: 25px;
+  left: 220px; /* changed this value to shift dressing to the right */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.food-icon-tortillas{
+  position: absolute;
+  top: 25px;
+  left: 130px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
 

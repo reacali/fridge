@@ -32,7 +32,7 @@ body {
 }
 .v83_177 {
   width: 352px;
-  height: 231px;
+  height: 200px;
   background: rgba(237,246,249,1);
   opacity: 1;
   position: absolute;
@@ -59,7 +59,7 @@ body {
 }
 .v83_179 {
   width: 321px;
-  color: url("../images/v83_179.png");
+  color: rgba(0,109,119,1);
   position: absolute;
   top: 55px;
   left: 14px;
@@ -70,8 +70,8 @@ body {
   text-align: left;
 }
 .v2022_88 {
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   background: url("../images/v2022_88.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -204,7 +204,7 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 618px;
+  top: 590px;
   left: 18px;
   overflow: hidden;
 }
@@ -228,7 +228,7 @@ body {
   width: 103px;
   color: rgba(0,109,119,1);
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 17px;
   font-family: Alata;
   font-weight: Regular;
@@ -240,7 +240,7 @@ body {
   width: 312px;
   color: rgba(0,109,119,1);
   position: absolute;
-  top: 69px;
+  top: 50px;
   left: 23px;
   font-family: Alata;
   font-weight: Regular;
@@ -261,7 +261,7 @@ body {
   position: absolute;
   top: 40px;
   left: 8px;
-  transform: rotate(-5deg);
+  transform: scale(.9) rotate(-5deg);
   overflow: hidden;
 }
 
@@ -417,6 +417,9 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
+  border-style:inset;
+  border-color: rgba(3, 82, 89, 0.7);
+  border-width: 5px;
 }
 .v2007_88 {
   width: 89px;

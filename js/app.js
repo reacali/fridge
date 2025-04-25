@@ -51,7 +51,7 @@ function addMeal(date, mealType, mealName) {
   }
 
   if (!mealPlans[date]) {
-      alert('Date outside of implemented range. Please select a date between 2025-04-27 and 2025-04-29.');
+      alert('Please select a date between 2025-04-27 and 2025-04-29.');
       return;
   }
 
@@ -59,7 +59,6 @@ function addMeal(date, mealType, mealName) {
   mealPlans[date][mealType].push(mealName);
   console.log(mealPlans);
 
-  alert(`Added to plan: ${mealName} for ${mealType} on ${date}`);
   populateMealPlan(date); // Refresh the meal plan display
 
 }

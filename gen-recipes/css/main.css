@@ -133,7 +133,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 150px;
-  left: 245px;
+  left: 250px;
   transform: rotate(-90deg);
   overflow: hidden;
 }
@@ -189,7 +189,7 @@ body {
   color: rgba(237,246,249,1);
   position: absolute;
   top: 185px;
-  left: 233px;
+  left: 237px;
   font-family: Alata;
   font-weight: Regular;
   font-size: 14px;

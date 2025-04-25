@@ -651,3 +651,6 @@ label input:checked + .edit-icon-wrapper + .unavailable-message {
   border-width: 5px;
   border-radius: 50%;
 }
+.edit-label:hover .unavailable-message {
+  display: block;
+}

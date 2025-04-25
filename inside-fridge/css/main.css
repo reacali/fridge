@@ -111,7 +111,7 @@ body {
   position: absolute;
   top: 751px;
   left: 29px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+  
   overflow: hidden;
 }
 .v121_3 {
@@ -126,6 +126,9 @@ body {
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  border-style:inset;
+  border-color: rgba(3, 82, 89, 0.7);
+  border-width: 7px;
   overflow: hidden;
 }
 .v121_4 { /* corresponds to Fast Meal Text */
@@ -534,6 +537,7 @@ body {
   display: none;
   color: red;
   font-weight: bold;
+  font-family: Alata;
   margin-top: 5px;
   background: white;
   padding: 4px 8px;

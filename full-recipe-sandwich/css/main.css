@@ -422,11 +422,11 @@ body {
   border-width: 5px;
 }
 
-.v2007_87:active {
+.add-button:active .v2007_87 {
   background-color: rgb(0, 0, 0);
 }
 
-.v2007_87:hover {
+.add-button:hover .v2007_87{
   background-color: rgba(0, 80, 90, 1);
 }
 

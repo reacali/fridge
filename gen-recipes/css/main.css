@@ -80,6 +80,15 @@ body {
   left: 29px;
   overflow: hidden;
 }
+
+.regenerate_button:active .v83_75  {
+  background-color: rgb(0, 0, 0);
+}
+
+.regenerate_button:hover .v83_75{
+  background-color: rgba(0, 80, 90, 1);
+}
+
 .v83_75 {
   width: 330px;
   height: 63px;

@@ -131,6 +131,15 @@ body {
   border-width: 7px;
   overflow: hidden;
 }
+
+.v121_2:active .v121_3  {
+  background-color: rgb(0, 0, 0);
+}
+
+.v121_2:hover .v121_3{
+  background-color: rgba(0, 80, 90, 1);
+}
+
 .v121_4 { /* corresponds to Fast Meal Text */
   width: 235px;
   color: rgba(255,255,255,1);

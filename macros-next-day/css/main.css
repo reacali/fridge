@@ -706,7 +706,21 @@ body {
   text-align: center;
 }
 
-.home_button {
+.v123_130 {
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 12px;
+  left: 307px;
+  border-style:solid;
+  border-color: rgba(18, 37, 39, 0.7);
+  border-width: 5px;
+  border-radius: 50%;
+}
+
+.home_icon{
   width: 32px;
   height: 32px;
   background: url("../images/v123_129.png");
@@ -733,29 +747,26 @@ body {
   border-radius: 50%;
 }
 
-.home_button {
-  width: 32px;
-  height: 32px;
-  background: url("../images/v123_129.png");
+.home_button:hover .home_icon{
+  background: url("../images/white_home.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 19px;
-  left: 316px;
-  overflow: hidden;
 }
-.v123_130 {
-  width: 50px;
-  height: 50px;
-  background: rgb(255, 255, 255);
-  opacity: 1;
-  position: absolute;
-  top: 12px;
-  left: 307px;
-  border-style:solid;
-  border-color: rgba(18, 37, 39, 0.7);
-  border-width: 5px;
-  border-radius: 50%;
+.home_button:hover .v123_130{
+  background: rgba(0,109,119,1);
+  border-color: rgb(0, 220, 240);
+}
+
+.v118_113:active .v118_114 {
+  background-color: rgb(0, 0, 0);
+  
+}
+.v118_113:hover .v118_114{
+  background-color: rgba(0,109,119,1);
+  border-color: rgb(0, 220, 240);
+}
+
+.v118_113:hover .v118_115{
+  color:rgb(255, 255, 255);
 }

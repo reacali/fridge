@@ -576,8 +576,8 @@ label input:checked + .edit-icon-wrapper + .unavailable-message {
 
 .food-icon-tortillas{
   position: absolute;
-  top: 25px;
-  left: 130px;
+  top: 45px;
+  left: 100px;
   width: 70px;
   height: 70px;
   border-radius: 50%;

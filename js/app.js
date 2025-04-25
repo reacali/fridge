@@ -103,12 +103,22 @@ function populateMealPlan(date) {
             const loadButton = document.createElement('button');
             loadButton.textContent = 'View';
             loadButton.style.marginLeft = '10px'; // Add some spacing
-            
+
             if (meal === 'Chicken Caesar Wrap') {
               loadButton.onclick = () => {
-                  loadScreen('full-recipe'); // Replace 'full-recipe' with the desired screen name
+                  loadScreen('full-recipe');
                   console.log(`Loading page for meal: ${meal}`);
               };
+            } else if (meal === 'Chicken Caesar Salad') {
+                loadButton.onclick = () => {
+                    loadScreen('full-recipe-salad');
+                    console.log(`Loading page for meal: ${meal}`);
+                };
+            } else if (meal === 'Grilled Chicken Sandwich') {
+                loadButton.onclick = () => {
+                    loadScreen('full-recipe-sandwich');
+                    console.log(`Loading page for meal: ${meal}`);
+                };
             }
             // Append the button to the meal item
             mealItem.appendChild(loadButton);

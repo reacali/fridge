@@ -578,7 +578,7 @@ body {
   font-weight: Regular;
 }
 
-.home_button {
+.home_icon {
   width: 32px;
   height: 32px;
   background: url("../images/v123_129.png");
@@ -620,4 +620,28 @@ body {
   z-index: 1000; 
   text-align: center;
   display: none; 
+}
+
+.home_button:hover .home_icon{
+  background: url("../images/white_home.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.home_button:hover .v123_130{
+  background: rgba(0,109,119,1);
+  border-color: rgb(0, 220, 240);
+}
+
+.v118_113:active .v118_114 {
+  background-color: rgb(0, 0, 0);
+  
+}
+.v118_113:hover .v118_114{
+  background-color: rgba(0,109,119,1);
+  border-color: rgb(0, 220, 240);
+}
+
+.v118_113:hover .v118_115{
+  color:rgb(255, 255, 255);
 }

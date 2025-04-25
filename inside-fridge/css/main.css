@@ -136,7 +136,7 @@ body {
   left: 49px;
   font-family: Alata;
   font-weight: Regular;
-  font-size: 40px;
+  font-size: 40px; 
   opacity: 1;
   text-align: center;
 }
@@ -348,17 +348,17 @@ body {
   left: 8px;
   overflow: hidden;
 }
-.v2037_7 {
+.v2037_7 { /* white circle for fruits&veggies box */
   width: 30px;
   height: 30px;
   background: rgba(255,255,255,1);
   opacity: 0.800000011920929;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 7px; 
+  left: 9px; 
   border-radius: 50%;
 }
-.v2037_8 {
+.v2037_8 { /* pencil for fruits&veggies box */
   width: 23px;
   height: 23px;
   background: url("../images/v2037_8.png");
@@ -367,8 +367,8 @@ body {
   background-size: cover;
   opacity: 0.800000011920929;
   position: absolute;
-  top: 3px;
-  left: 4px;
+  top: 8px;
+  left: 12px;
   overflow: hidden;
 }
 .v118_88 { /* corresponds to Fruits & Veggies Text  */
@@ -425,17 +425,17 @@ body {
   left: 8px;
   overflow: hidden;
 }
-.v144_5 {
+.v144_5 { /* white circle for dairy */
   width: 30px;
   height: 30px;
   background: rgba(255,255,255,1);
   opacity: 0.800000011920929;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 7px;
+  left: 8px;
   border-radius: 50%;
 }
-.v144_3 {
+.v144_3 { /* pencil icon for dairy */
   width: 23px;
   height: 23px;
   background: url("../images/v144_3.png");
@@ -444,8 +444,8 @@ body {
   background-size: cover;
   opacity: 0.800000011920929;
   position: absolute;
-  top: 3px;
-  left: 4px;
+  top: 10px;
+  left: 12px;
   overflow: hidden;
 }
 .v118_91 { /* corresponds to Dairy Text  */
@@ -464,7 +464,7 @@ body {
 .v118_104 {
   width: 44px;
   height: 43px;
-  background: url("../images/v118_104.png");
+  background: url("../images/v118_104.png"); 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -485,35 +485,14 @@ body {
   left: 0px;
   border-radius: 50%;
 }
-.v118_106 {
-  width: 32px;
-  height: 5px;
-  background: rgba(131,197,190,1);
-  opacity: 1;
+.home-icon {
+  width: 32px; 
+  height: 32px;
   position: absolute;
-  top: 29px;
-  left: 6px;
-  border: 4px solid rgba(0,109,119,1);
-}
-.v118_107 {
-  width: 32px;
-  height: 5px;
-  background: rgba(131,197,190,1);
-  opacity: 1;
-  position: absolute;
-  top: 19px;
-  left: 6px;
-  border: 4px solid rgba(0,109,119,1);
-}
-.v118_108 {
-  width: 32px;
-  height: 5px;
-  background: rgba(131,197,190,1);
-  opacity: 1;
-  position: absolute;
-  top: 9px;
-  left: 6px;
-  border: 4px solid rgba(0,109,119,1);
+  top: 5px;  /* center it vertically */
+  left: 6px; /* center it horizontally */
+  z-index: 2;
+  object-fit: contain;
 }
 .v118_101 {
   width: 46px;

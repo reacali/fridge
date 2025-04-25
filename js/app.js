@@ -196,4 +196,4 @@ function populateGroceryList() {
   });
 }
 
-  window.onload = () => loadScreen('full-recipe-sandwich');
+  window.onload = () => loadScreen('home-screen');

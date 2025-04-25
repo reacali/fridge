@@ -265,19 +265,19 @@ body {
 
 /*book mark*/
 .v83_195 {
-  width: 107px;
+  width: 100px;
   height: 155px;
-  background: url("../images/v83_195.png");
+  background: url("../images/bookmark.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 40px;
-  left: 230px;
+  left: 240px;
   transform: rotate(-90deg);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+
 }
 
 /* book */
@@ -343,6 +343,8 @@ body {
   font-size: 24px;
   opacity: 1;
   text-align: center;
+  stroke: black;
+  stroke-width: 5px;
 }
 .v2007_81 {
   width: 352px;
@@ -383,7 +385,9 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v2007_86 {
+
+/* Add Button*/
+.add-button {
   width: 89px;
   height: 29px;
   background: url("../images/v2007_86.png");
@@ -392,10 +396,10 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 29px;
-  left: 262px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+  top: 22px;
+  left: 250px;
   overflow: hidden;
+  z-index: 10;
 }
 .v2007_87 {
   width: 74px;
@@ -506,7 +510,7 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: Inter;
+  font-family: Alata;
   font-weight: Bold;
   font-size: 48px;
   opacity: 1;
@@ -515,11 +519,14 @@ body {
 
 /* Style for the dropdown container */
 .dropdown {
-  margin: 10px 0;
+  margin: 20px 22px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 5px;
   z-index: 11;
+  font-family: Alata;
+  font-weight: Regular;
+  font-size: 10px;
 }
 
 /* Style for the date picker */
@@ -531,6 +538,9 @@ body {
   width: 100%;
   max-width: 120px;
   z-index: 12;
+  font-family: Alata;
+  font-weight: Regular;
+  font-size: 13px;
 }
 
 /* Style for the meal type dropdown */
@@ -543,9 +553,8 @@ body {
   max-width: 100px;
   background-color: #fff;
   z-index: 13;
-  
+  right: 120px;
+  font-family: Alata;
+  font-weight: Regular;
 }
 
-.v2007_86 {
-  z-index: 10;
-}

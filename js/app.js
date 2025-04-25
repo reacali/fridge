@@ -31,4 +31,22 @@ function loadScreen(screenName) {
       });
   }
   
+  function addMeal(date, mealType) {
+    if (!date || !mealType) {
+        alert('Please select both a date and a meal type.');
+        return;
+    }
+
+    // Retrieve existing meal plans from localStorage
+    const mealPlans = JSON.parse(localStorage.getItem('mealPlans')) || [];
+
+    // Add the new meal plan to the list
+    mealPlans.push({ date, mealType });
+
+    // Save the updated list back to localStorage
+    localStorage.setItem('mealPlans', JSON.stringify(mealPlans));
+
+    alert(`Added to plan: ${mealType} on ${date}`);
+  }
+
   window.onload = () => loadScreen('home-screen');

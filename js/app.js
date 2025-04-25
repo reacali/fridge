@@ -1,39 +1,40 @@
 function loadScreen(screenName) {
-    fetch(`./${screenName}/index.html`)
+  fetch(`./${screenName}/index.html`)
       .then(response => {
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-        return response.text();
+          if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+          return response.text();
       })
       .then(html => {
-        // Inject HTML into screen container
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-        document.getElementById('screen-container').innerHTML = doc.body.innerHTML;
-  
-        // Inject or update screen-specific CSS
-        const existingLink = document.getElementById('screen-style');
-        const cssPath = `./${screenName}/css/main.css`;
-  
-        if (existingLink) {
-          existingLink.setAttribute('href', cssPath);
-        } else {
-          const link = document.createElement('link');
-          link.rel = 'stylesheet';
-          link.id = 'screen-style';
-          link.href = cssPath;
-          document.head.appendChild(link);
-        }
+          // Inject HTML into screen container
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          document.getElementById('screen-container').innerHTML = doc.body.innerHTML;
+
+          // Inject or update screen-specific CSS
+          const existingLink = document.getElementById('screen-style');
+          const cssPath = `./${screenName}/css/main.css`;
+
+          if (existingLink) {
+              existingLink.setAttribute('href', cssPath);
+          } else {
+              const link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.id = 'screen-style';
+              link.href = cssPath;
+              document.head.appendChild(link);
+          }
+
+          // Populate the grocery list if the grocery-list screen is loaded
+          if (screenName === 'grocery-list') {
+              populateGroceryList();
+          }
       })
       .catch(err => {
-        console.error('Screen load error:', err);
-        document.getElementById('screen-container').innerHTML =
-          `<p>Failed to load screen: ${screenName}</p>`;
+          console.error('Screen load error:', err);
+          document.getElementById('screen-container').innerHTML =
+              `<p>Failed to load screen: ${screenName}</p>`;
       });
-
-      if (screenName === 'calendar') {
-        populateMealPlan("2025-04-27");
-      }
-  }
+}
   
 // Global object to store meal plans
 const mealPlans = {
@@ -132,4 +133,67 @@ function populateMealPlan(date) {
     }
 }
 
-  window.onload = () => loadScreen('home-screen');
+// Global grocery list
+const groceryList = [];
+
+// Function to add an item to the grocery list
+function addToGroceryList(item) {
+    if (!item) {
+        console.error('No item provided to add to the grocery list.');
+        return;
+    }
+
+    // Check if the item already exists in the list
+    if (groceryList.includes(item)) {
+        console.log(`${item} is already in the grocery list.`);
+        return;
+    }
+
+    // Add the item to the list
+    groceryList.push(item);
+    console.log(`${item} added to the grocery list.`);
+    console.log('Updated Grocery List:', groceryList);
+}
+
+function populateGroceryList() {
+  const groceryListContainer = document.querySelector('.v2007_69');
+  if (!groceryListContainer) {
+      console.error('Grocery list container not found.');
+      return;
+  }
+
+  // Clear any existing content
+  groceryListContainer.innerHTML = '';
+
+  // Check if the grocery list is empty
+  if (groceryList.length === 0) {
+
+      return;
+  }
+
+  // Iterate over the grocery list and create items
+  groceryList.forEach(item => {
+      // Create a parent container for the item
+      const itemRow = document.createElement('div');
+      itemRow.style.display = 'flex'; // Use flexbox to align elements side by side
+      itemRow.style.alignItems = 'center'; // Vertically align the text and div
+
+      // Create the .v2037_2 div
+      const itemContainer = document.createElement('div');
+      itemContainer.classList.add('v2037_2'); // Add the CSS class for the container
+
+      // Create a span for the item text
+      const itemText = document.createElement('span');
+      itemText.textContent = item;
+      itemText.style.marginLeft = '60px'; // Add spacing between the div and the text
+
+      // Append the .v2037_2 div and the text to the parent container
+      itemRow.appendChild(itemContainer);
+      itemRow.appendChild(itemText);
+
+      // Append the parent container to the grocery list container
+      groceryListContainer.appendChild(itemRow);
+  });
+}
+
+  window.onload = () => loadScreen('full-recipe-sandwich');

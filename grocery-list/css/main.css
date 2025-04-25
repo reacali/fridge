@@ -98,6 +98,18 @@ body {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   overflow: hidden;
+  font-family: Alata;
+  font-size: 20px;
+  margin-top:70px;
+  margin-left: 20px;
+}
+
+.v2007_69 span {
+  margin-top: 70px;
+  margin-left: 100px;
+  font-family: 'Alata', sans-serif; /* Change to your desired font */
+  font-size: 24px; /* Adjust the font size */
+  color: #333; /* Set the text color */
 }
 .v2037_4 {
   width: 272px;

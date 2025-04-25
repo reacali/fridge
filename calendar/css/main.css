@@ -259,15 +259,182 @@ body {
   left: 1px;
   border-radius: 50%;
 }
-.v2022_16 {
-  width: 46px;
-  color: rgba(0,109,119,1);
+
+/*back button*/
+.v118_113 {
+  width: 50px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 27px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  overflow: hidden;
+}
+.v118_114 {
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  /* background: rgba(0,109,119,1); */
+  opacity: 1;
   position: absolute;
   top: 0px;
   left: 0px;
+  border-style:solid;
+  border-color: rgba(18, 37, 39, 0.7);
+  border-width: 5px;
+  border-radius: 50%;
+}
+.v118_115 {
+  width: 25px;
+  color: rgba(0,109,119,1);
+  /* color: rgb(255, 255, 255); */
+  position: absolute;
+  top: -4px;
+  left: 4px;
   font-family: Inter;
   font-weight: Bold;
-  font-size: 48px;
+  font-size: 44px;
   opacity: 1;
   text-align: center;
+}
+
+.v118_114 {
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  /* background: rgba(0,109,119,1); */
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-style:solid;
+  border-color: rgba(18, 37, 39, 0.7);
+  border-width: 5px;
+  border-radius: 50%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 20px;
+  font-family: Alata;
+}
+
+h1 {
+  font-size: 24px;
+  color: rgba(0,109,119,1);
+  font-family: Alata;
+  text-align: center;
+  margin-top: 50px;
+}
+
+th, td {
+  border: 2px solid #333;
+  text-align: center;
+  vertical-align: top;
+  padding: 2px;
+  height: 4px;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+td {
+  font-size: 16px;
+}
+
+.empty {
+  background-color: #f9f9f9;
+}
+
+/* Styling for the meal plan container */
+#meal-plan {
+  margin-top: 0px;
+  padding: 10px;
+  font-family: 'Alata', sans-serif;
+}
+
+/* Styling for the heading (date) */
+#meal-plan h2 {
+  font-size: 24px;
+  color: rgba(0, 109, 119, 1);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Styling for meal type labels (breakfast, lunch, dinner) */
+#meal-plan h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+/* Styling for the meal list */
+#meal-plan ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+/* Styling for individual meal items */
+#meal-plan ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Optional: Add hover effect for meal items */
+#meal-plan ul li:hover {
+  color: rgba(0, 109, 119, 1);
+  cursor: pointer;
+}
+
+#meal-plan button {
+  background: rgba(0, 109, 119, 0.84);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: 'Alata', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.home_button {
+  width: 32px;
+  height: 32px;
+  background: url("../images/v123_129.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  left: 316px;
+  overflow: hidden;
+}
+.v123_130 {
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 12px;
+  left: 307px;
+  border-style:solid;
+  border-color: rgba(18, 37, 39, 0.7);
+  border-width: 5px;
+  border-radius: 50%;
 }

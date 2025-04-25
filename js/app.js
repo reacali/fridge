@@ -85,14 +85,13 @@ function populateMealPlan(date) {
     heading.textContent = `Meals for ${date}`;
     mealPlanContainer.appendChild(heading);
 
-    // Check if the date exists in mealPlans
+    // Ensure the date exists in the mealPlans object
     if (!mealPlans[date]) {
-        mealPlanContainer.innerHTML += '<p>No meals planned for this date.</p>';
-        return;
+        mealPlans[date] = { breakfast: [], lunch: [], dinner: [] };
     }
 
     // Iterate over meal types (breakfast, lunch, dinner)
-    for (const [mealType, meals] of Object.entries(mealPlans[date])) {
+    for (const mealType of ['breakfast', 'lunch', 'dinner']) {
         // Create a label for the meal type
         const mealTypeLabel = document.createElement('h3');
         mealTypeLabel.textContent = mealType.charAt(0).toUpperCase() + mealType.slice(1);
@@ -100,37 +99,48 @@ function populateMealPlan(date) {
 
         // Create a list for the meals
         const mealList = document.createElement('ul');
-        meals.forEach(meal => {
-            const mealItem = document.createElement('li');
-            mealItem.textContent = meal;
+        const meals = mealPlans[date][mealType];
 
-            // Create a button next to the meal
-            const loadButton = document.createElement('button');
-            loadButton.textContent = 'View';
-            loadButton.style.marginLeft = '10px'; // Add some spacing
+        if (meals.length === 0) {
+            // Add a placeholder if no meals are present
+            const placeholder = document.createElement('li');
+            placeholder.textContent = 'No meals planned.';
+            placeholder.style.fontStyle = 'italic';
+            mealList.appendChild(placeholder);
+        } else {
+            meals.forEach(meal => {
+                const mealItem = document.createElement('li');
+                mealItem.textContent = meal;
 
-            if (meal === 'Chicken Caesar Wrap') {
-              loadButton.onclick = () => {
-                  loadScreen('full-recipe');
-                  console.log(`Loading page for meal: ${meal}`);
-              };
-            } else if (meal === 'Chicken Caesar Salad') {
-                loadButton.onclick = () => {
-                    loadScreen('full-recipe-salad');
-                    console.log(`Loading page for meal: ${meal}`);
-                };
-            } else if (meal === 'Grilled Chicken Sandwich') {
-                loadButton.onclick = () => {
-                    loadScreen('full-recipe-sandwich');
-                    console.log(`Loading page for meal: ${meal}`);
-                };
-            }
-            // Append the button to the meal item
-            mealItem.appendChild(loadButton);
+                // Create a button next to the meal
+                const loadButton = document.createElement('button');
+                loadButton.textContent = 'View';
+                loadButton.style.marginLeft = '10px'; // Add some spacing
 
-            // Append the meal item to the list
-            mealList.appendChild(mealItem);
-        });
+                if (meal === 'Chicken Caesar Wrap') {
+                    loadButton.onclick = () => {
+                        loadScreen('full-recipe');
+                        console.log(`Loading page for meal: ${meal}`);
+                    };
+                } else if (meal === 'Chicken Caesar Salad') {
+                    loadButton.onclick = () => {
+                        loadScreen('full-recipe-salad');
+                        console.log(`Loading page for meal: ${meal}`);
+                    };
+                } else if (meal === 'Grilled Chicken Sandwich') {
+                    loadButton.onclick = () => {
+                        loadScreen('full-recipe-sandwich');
+                        console.log(`Loading page for meal: ${meal}`);
+                    };
+                }
+
+                // Append the button to the meal item
+                mealItem.appendChild(loadButton);
+
+                // Append the meal item to the list
+                mealList.appendChild(mealItem);
+            });
+        }
 
         // Append the list to the container
         mealPlanContainer.appendChild(mealList);

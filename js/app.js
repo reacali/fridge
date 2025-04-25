@@ -50,3 +50,4 @@ function loadScreen(screenName) {
   }
 
   window.onload = () => loadScreen('home-screen');
+  window.onload = () => loadScreen('home-screen'); //CHANGING THIS FOR NOW //

@@ -58,46 +58,46 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.v118_76 {
+.v118_76 { /* left cabinet square */
   width: 163px;
   height: 111px;
   background: rgba(155,155,155,1);
   opacity: 1;
   position: absolute;
   top: 12px;
-  left: 27px;
+  left: 27px; /**/
   border: 3px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v118_77 {
+.v118_77 { /* right cabinet square */
   width: 163px;
   height: 111px;
   background: rgba(155,155,155,1);
   opacity: 1;
   position: absolute;
   top: 12px;
-  left: 204px;
+  left: 204px; 
   border: 3px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v118_78 {
+.v118_78 { /* right cabinet door */
   width: 26px;
   height: 142px;
   background: rgba(217,217,217,1);
   opacity: 1;
   position: absolute;
-  top: 12px;
-  left: 365px;
+  top: 0px;
+  left: 350px;
   border: 3px solid rgba(0,0,0,1);
 }
-.v118_79 {
+.v118_79 { /* right cabinet door */
   width: 29px;
   height: 142px;
   background: rgba(217,217,217,1);
   opacity: 1;
   position: absolute;
-  top: 12px;
-  left: 29px;
+  top: 0px;
+  left: 15px;
   border: 3px solid rgba(0,0,0,1);
 }
 .v121_2 {
@@ -128,7 +128,7 @@ body {
   border-bottom-right-radius: 30px;
   overflow: hidden;
 }
-.v121_4 {
+.v121_4 { /* corresponds to Fast Meal Text */
   width: 235px;
   color: rgba(255,255,255,1);
   position: absolute;
@@ -136,7 +136,7 @@ body {
   left: 49px;
   font-family: Alata;
   font-weight: Regular;
-  font-size: 40px;
+  font-size: 40px; 
   opacity: 1;
   text-align: center;
 }
@@ -217,12 +217,12 @@ body {
   left: 4px;
   overflow: hidden;
 }
-.v118_89 {
+.v118_89 { /* corresponds to Misc. Text */
   width: 54px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 86px;
-  left: 296px;
+  top: 40px; /* corresponds to Misc. up or down */
+  left: 290px; /* corresponds to Misc. left or right */
   font-family: Alata;
   font-weight: Regular;
   font-size: 24px;
@@ -294,12 +294,12 @@ body {
   left: 4px;
   overflow: hidden;
 }
-.v118_90 {
+.v118_90 { /* corresponds to  Protein Text */
   width: 74px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 96px;
-  left: 296px;
+  top: 44px; /* corresponds to Protein up or down */
+  left: 280px; /* corresponds to Protein left or right */
   font-family: Alata;
   font-weight: Regular;
   font-size: 24px;
@@ -348,17 +348,17 @@ body {
   left: 8px;
   overflow: hidden;
 }
-.v2037_7 {
+.v2037_7 { /* white circle for fruits&veggies box */
   width: 30px;
   height: 30px;
   background: rgba(255,255,255,1);
   opacity: 0.800000011920929;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 7px; 
+  left: 9px; 
   border-radius: 50%;
 }
-.v2037_8 {
+.v2037_8 { /* pencil for fruits&veggies box */
   width: 23px;
   height: 23px;
   background: url("../images/v2037_8.png");
@@ -367,16 +367,16 @@ body {
   background-size: cover;
   opacity: 0.800000011920929;
   position: absolute;
-  top: 3px;
-  left: 4px;
+  top: 8px;
+  left: 12px;
   overflow: hidden;
 }
-.v118_88 {
+.v118_88 { /* corresponds to Fruits & Veggies Text  */
   width: 85px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 101px;
-  left: 282px;
+  top: 28px; /* corresponds to Fruits & Veggies up or down */
+  left: 253px; /* corresponds to Fruits & Veggies left or right */
   font-family: Alata;
   font-weight: Regular;
   font-size: 24px;
@@ -425,17 +425,17 @@ body {
   left: 8px;
   overflow: hidden;
 }
-.v144_5 {
+.v144_5 { /* white circle for dairy */
   width: 30px;
   height: 30px;
   background: rgba(255,255,255,1);
   opacity: 0.800000011920929;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 7px;
+  left: 8px;
   border-radius: 50%;
 }
-.v144_3 {
+.v144_3 { /* pencil icon for dairy */
   width: 23px;
   height: 23px;
   background: url("../images/v144_3.png");
@@ -444,16 +444,16 @@ body {
   background-size: cover;
   opacity: 0.800000011920929;
   position: absolute;
-  top: 3px;
-  left: 4px;
+  top: 10px;
+  left: 12px;
   overflow: hidden;
 }
-.v118_91 {
+.v118_91 { /* corresponds to Dairy Text  */
   width: 58px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 88px;
-  left: 296px;
+  top: 47px; /* corresponds to Dairy up or down */
+  left: 285px; /* corresponds to Dairy left or right */
   font-family: Alata;
   font-weight: Regular;
   font-size: 24px;
@@ -464,7 +464,7 @@ body {
 .v118_104 {
   width: 44px;
   height: 43px;
-  background: url("../images/v118_104.png");
+  background: url("../images/v118_104.png"); 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -485,35 +485,14 @@ body {
   left: 0px;
   border-radius: 50%;
 }
-.v118_106 {
-  width: 32px;
-  height: 5px;
-  background: rgba(131,197,190,1);
-  opacity: 1;
+.home-icon {
+  width: 32px; 
+  height: 32px;
   position: absolute;
-  top: 29px;
-  left: 6px;
-  border: 4px solid rgba(0,109,119,1);
-}
-.v118_107 {
-  width: 32px;
-  height: 5px;
-  background: rgba(131,197,190,1);
-  opacity: 1;
-  position: absolute;
-  top: 19px;
-  left: 6px;
-  border: 4px solid rgba(0,109,119,1);
-}
-.v118_108 {
-  width: 32px;
-  height: 5px;
-  background: rgba(131,197,190,1);
-  opacity: 1;
-  position: absolute;
-  top: 9px;
-  left: 6px;
-  border: 4px solid rgba(0,109,119,1);
+  top: 5px;  /* center it vertically */
+  left: 6px; /* center it horizontally */
+  z-index: 2;
+  object-fit: contain;
 }
 .v118_101 {
   width: 46px;
@@ -568,4 +547,39 @@ label input:checked + .edit-icon-wrapper + .unavailable-message {
   display: block;
 }
 
+.food-icon-chicken{
+  position: absolute;
+  top: 25px;
+  left: 130px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.food-icon-lettuce{
+  position: absolute;
+  top: 25px;
+  left: 130px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.food-icon-dressing{
+  position: absolute;
+  top: 25px;
+  left: 220px; /* changed this value to shift dressing to the right */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.food-icon-tortillas{
+  position: absolute;
+  top: 25px;
+  left: 130px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
 

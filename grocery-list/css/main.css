@@ -104,12 +104,35 @@ body {
   margin-left: 20px;
 }
 
+/* Styling for the grocery list title */
+.v2007_69 h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px; /* Add spacing below the title */
+}
+
+/* Styling for the grocery list items */
+.v2007_69 div {
+    display: flex;
+    align-items: center; /* Align bullet and text vertically */
+    margin-bottom: 10px; /* Add spacing between rows */
+}
+
+/* Styling for the bullet (v2037_2) */
+.v2037_2 {
+    width: 20px; /* Fixed width for the bullet */
+    height: 20px; /* Fixed height for the bullet */
+    background-color: #007b77; /* Example bullet color */
+    border-radius: 50%; /* Make the bullet circular */
+}
+
+/* Styling for the text */
 .v2007_69 span {
-  margin-top: 70px;
-  margin-left: 100px;
-  font-family: 'Alata', sans-serif; /* Change to your desired font */
-  font-size: 24px; /* Adjust the font size */
-  color: #333; /* Set the text color */
+    margin-left: 10px; /* Add spacing between the bullet and the text */
+    font-family: 'Alata', sans-serif;
+    font-size: 16px; /* Set font size for the text */
+    color: #333; /* Text color */
 }
 
 .v2007_74 {

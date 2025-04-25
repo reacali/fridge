@@ -33,6 +33,23 @@ function loadScreen(screenName) {
             if (screenName === 'calendar') {
                 populateMealPlan('2025-04-28'); // Call after the DOM is updated
             }
+
+            // Attach the popup functionality to the add-button if the full-recipe screen is loaded
+            if (screenName === 'full-recipe' || screenName === 'full-recipe-salad' || screenName === 'full-recipe-sandwich') {
+                const addButton = document.querySelector('.add-button');
+                if (addButton) {
+                    addButton.addEventListener('click', () => {
+                        showAddedPopup();
+                    });
+                }
+
+                const addFood = document.querySelector('.v2022_88');
+                if (addFood) {
+                    addFood.addEventListener('click', () => {
+                        showAddedPopup();
+                    });
+                }
+            }
         })
         .catch(err => {
             console.error('Screen load error:', err);
@@ -170,44 +187,78 @@ function addToGroceryList(item) {
 }
 
 function populateGroceryList() {
-  const groceryListContainer = document.querySelector('.v2007_69');
-  if (!groceryListContainer) {
-      console.error('Grocery list container not found.');
-      return;
-  }
+    const groceryListContainer = document.querySelector('.v2007_69');
+    if (!groceryListContainer) {
+        console.error('Grocery list container not found.');
+        return;
+    }
 
-  // Clear any existing content
-  groceryListContainer.innerHTML = '';
+    // Clear any existing content
+    groceryListContainer.innerHTML = '';
 
-  // Check if the grocery list is empty
-  if (groceryList.length === 0) {
+    // Add a title at the top of the grocery list
+    const title = document.createElement('h2');
+    title.textContent = 'Grocery List';
+    title.style.textAlign = 'center'; // Center the title
+    title.style.marginBottom = '20px'; // Add spacing below the title
+    groceryListContainer.appendChild(title);
 
-      return;
-  }
+    // Check if the grocery list is empty
+    if (groceryList.length === 0) {
+        const emptyMessage = document.createElement('p');
+        emptyMessage.textContent = 'Your grocery list is empty.';
+        emptyMessage.style.textAlign = 'center';
+        groceryListContainer.appendChild(emptyMessage);
+        return;
+    }
 
-  // Iterate over the grocery list and create items
-  groceryList.forEach(item => {
-      // Create a parent container for the item
-      const itemRow = document.createElement('div');
-      itemRow.style.display = 'flex'; // Use flexbox to align elements side by side
-      itemRow.style.alignItems = 'center'; // Vertically align the text and div
+    // Iterate over the grocery list and create items
+    groceryList.forEach(item => {
+        // Create a parent container for the item
+        const itemRow = document.createElement('div');
+        itemRow.style.display = 'flex'; // Use flexbox to align elements side by side
+        itemRow.style.alignItems = 'center'; // Vertically align the text and div
+        itemRow.style.marginBottom = '10px'; // Add spacing between rows
 
-      // Create the .v2037_2 div
-      const itemContainer = document.createElement('div');
-      itemContainer.classList.add('v2037_2'); // Add the CSS class for the container
+        // Create the .v2037_2 div (bullet)
+        const itemContainer = document.createElement('div');
+        itemContainer.classList.add('v2037_2'); // Add the CSS class for the container
+        itemContainer.style.width = '20px'; // Set a fixed width for the bullet
+        itemContainer.style.height = '20px'; // Set a fixed height for the bullet
+        itemContainer.style.backgroundColor = '#007b77'; // Example bullet color
+        itemContainer.style.borderRadius = '50%'; // Make it circular
 
-      // Create a span for the item text
-      const itemText = document.createElement('span');
-      itemText.textContent = item;
-      itemText.style.marginLeft = '60px'; // Add spacing between the div and the text
+        // Create a span for the item text
+        const itemText = document.createElement('span');
+        itemText.textContent = item;
+        itemText.style.marginLeft = '10px'; // Add spacing between the bullet and the text
+        itemText.style.fontSize = '16px'; // Set font size for the text
 
-      // Append the .v2037_2 div and the text to the parent container
-      itemRow.appendChild(itemContainer);
-      itemRow.appendChild(itemText);
+        // Append the bullet and the text to the parent container
+        itemRow.appendChild(itemContainer);
+        itemRow.appendChild(itemText);
 
-      // Append the parent container to the grocery list container
-      groceryListContainer.appendChild(itemRow);
-  });
+        // Append the parent container to the grocery list container
+        groceryListContainer.appendChild(itemRow);
+    });
 }
+    function showAddedPopup() {
+        // Create the popup element
+        const popup = document.createElement('div');
+        popup.classList.add('added-popup');
+        popup.textContent = 'Added';
+
+        // Append the popup to the body
+        document.body.appendChild(popup);
+
+        // Show the popup
+        popup.style.display = 'block';
+
+        // Remove the popup after 1.5 seconds
+        setTimeout(() => {
+            popup.style.display = 'none';
+            popup.remove();
+        }, 1500);
+    }
 
   window.onload = () => loadScreen('home-screen');

@@ -67,7 +67,7 @@ body {
   left: 28px;
   overflow: hidden;
 }
-.v83_74 {
+.regenerate_button {
   width: 330px;
   height: 63px;
   background: url("../images/v83_74.png");
@@ -123,7 +123,7 @@ body {
   transform: rotate(0deg);
   overflow: hidden;
 }
-.v83_78 {
+.sandwich_bookmark {
   width: 106px;
   height: 170px;
   background: url("../images/v83_78.png");
@@ -137,7 +137,7 @@ body {
   transform: rotate(-90deg);
   overflow: hidden;
 }
-.v83_79 {
+.sandwich_book {
   width: 256px;
   height: 240px;
   background: url("../images/v83_79.png");
@@ -151,7 +151,7 @@ body {
   transform: rotate(-50deg);
   overflow: hidden;
 }
-.v83_80 {
+.sandwich_pic {
   width: 170px;
   height: 115px;
   background: url("../images/v83_80.png");
@@ -170,7 +170,7 @@ body {
   transform: rotate(-20deg);
   overflow: hidden;
 }
-.v83_81 {
+.sandwich_name {
   width: 208px;
   color: rgba(0,109,119,0.843137264251709);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -184,7 +184,7 @@ body {
   text-align: center;
   transform: rotate(-20deg);
 }
-.v83_99 {
+.sandwich_info {
   width: 139px;
   color: rgba(237,246,249,1);
   position: absolute;
@@ -209,7 +209,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v83_83 {
+.salad_bookmark {
   width: 106px;
   height: 170px;
   background: url("../images/v83_78.png");
@@ -224,7 +224,7 @@ body {
   overflow: hidden;
   transform: rotate(90deg);
 }
-.v83_84 {
+.salad_book {
   width: 256px;
   height: 240px;
   background: url("../images/v83_79.png");
@@ -238,7 +238,7 @@ body {
   transform: rotate(-10deg);
   overflow: hidden;
 }
-.v83_85 {
+.salad_pic {
   width: 110px;
   height: 155px;
   background: url("../images/v83_85.png");
@@ -257,7 +257,7 @@ body {
   overflow: hidden;
   transform: rotate(110deg);
 }
-.v83_86 {
+.salad_name {
   width: 164px;
   color: rgba(0,109,119,0.843137264251709);
   position: absolute;
@@ -271,7 +271,7 @@ body {
   text-align: center;
   transform: rotate(17deg);
 }
-.v83_98 {
+.salad_info {
   width: 139px;
   color: rgba(237,246,249,1);
   position: absolute;
@@ -284,20 +284,20 @@ body {
   text-align: center;
 }
 .wrap {
-  width: 600px;
-  height: 352px;
+  width: 420px;
+  height: 240px;
   background: url("../images/v83_87.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 30px;
-  left: -60px;
+  top: 60px;
+  left: -20px;
   transform: rotate(0deg);
   overflow: hidden;
 }
-.v83_88 {
+.wrap_bookmark {
   width: 106px;
   height: 170px;
   background: url("../images/v83_78.png");
@@ -306,12 +306,12 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 40px;
-  left: 301px;
+  top: 2px;
+  left: 265px;
   transform: rotate(-90deg);
   overflow: hidden;
 }
-.v83_89 {
+.wrap_book {
   width: 256px;
   height: 240px;
   background: url("../images/v83_79.png");
@@ -320,12 +320,12 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 30px;
-  left: 70px;
+  top: 0px;
+  left: 40px;
   transform: rotate(-50deg);
   overflow: hidden;
 }
-.v83_90 {
+.wrap_pic {
   width: 159px;
   height: 107px;
   background: url("../images/v83_90.png");
@@ -334,8 +334,8 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 90px;
-  left: 115px;
+  top: 60px;
+  left: 90px;
   border: 1px solid rgba(86,86,86,1);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -345,12 +345,12 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.v83_91 {
+.wrap_name {
   width: 175px;
   color: rgba(0,109,119,0.843137264251709);
   position: absolute;
-  top: 40px;
-  left: 80px;
+  top: 10px;
+  left: 40px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Alata;
   font-weight: Bold;
@@ -359,19 +359,19 @@ body {
   text-align: center;
   transform: rotate(-20deg);
 }
-.v83_97 {
+.wrap_info {
   width: 139px;
   color: rgba(237,246,249,1);
   position: absolute;
-  top: 75px;
-  left: 292px;
+  top: 38px;
+  left: 255px;
   font-family: Alata;
   font-weight: Regular;
   font-size: 14px;
   opacity: 1;
   text-align: center;
 }
-.v123_129 {
+.home_button {
   width: 35px;
   height: 35px;
   background: url("../images/v123_129.png");
@@ -425,38 +425,38 @@ body {
   border: 4px solid rgba(0,109,119,1);
 }
 .back_button {
-  width: 46px;
-  height: 58px;
+  width: 50px;
+  height: 50px;
   background: url("../images/v122_6.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 0px;
+  top: 12px;
   left: 27px;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   overflow: hidden;
 }
 .v122_7 {
-  width: 44px;
-  height: 43px;
+  width: 50px;
+  height: 50px;
   background: rgb(159, 224, 217);
   opacity: 1;
   position: absolute;
-  top: 9px;
-  left: 1px;
+  top: 0px;
+  left: 0px;
   border-radius: 50%;
 }
 .v122_8 {
-  width: 35px;
+  width: 25px;
   color: rgba(0,109,119,1);
   position: absolute;
-  top: -10px;
-  left: 0px;
+  top: -12px;
+  left: 2px;
   font-family: Alata;
   font-weight: Bold;
-  font-size: 48px;
+  font-size: 44px;
   opacity: 1;
   text-align: center;
 }

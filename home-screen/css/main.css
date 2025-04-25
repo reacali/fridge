@@ -58,7 +58,7 @@ body {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   overflow: hidden;
 }
 .v116_147 {
@@ -137,7 +137,6 @@ body {
 .v152_19 {
   width: 160px;
   height: 153px;
-  background: url("../images/v152_19.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -145,7 +144,7 @@ body {
   position: absolute;
   top: 230px;
   left: 48px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
   overflow: hidden;
 }
 .v152_20 {
@@ -161,8 +160,8 @@ body {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
   overflow: hidden;
+  
 }
 .v152_21 {
   width: 160px;
@@ -451,7 +450,6 @@ body {
   position: absolute;
   top: 347px;
   left: 255px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
   overflow: hidden;
 }
 .v2006_49 {
@@ -567,7 +565,6 @@ body {
   position: absolute;
   top: 119px;
   left: 276px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
   overflow: hidden;
 }
 .v2006_160 {

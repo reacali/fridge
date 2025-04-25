@@ -1,41 +1,46 @@
 function loadScreen(screenName) {
-  fetch(`./${screenName}/index.html`)
-      .then(response => {
-          if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-          return response.text();
-      })
-      .then(html => {
-          // Inject HTML into screen container
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(html, 'text/html');
-          document.getElementById('screen-container').innerHTML = doc.body.innerHTML;
+    fetch(`./${screenName}/index.html`)
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            return response.text();
+        })
+        .then(html => {
+            // Inject HTML into screen container
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            document.getElementById('screen-container').innerHTML = doc.body.innerHTML;
 
-          // Inject or update screen-specific CSS
-          const existingLink = document.getElementById('screen-style');
-          const cssPath = `./${screenName}/css/main.css`;
+            // Inject or update screen-specific CSS
+            const existingLink = document.getElementById('screen-style');
+            const cssPath = `./${screenName}/css/main.css`;
 
-          if (existingLink) {
-              existingLink.setAttribute('href', cssPath);
-          } else {
-              const link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.id = 'screen-style';
-              link.href = cssPath;
-              document.head.appendChild(link);
-          }
+            if (existingLink) {
+                existingLink.setAttribute('href', cssPath);
+            } else {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.id = 'screen-style';
+                link.href = cssPath;
+                document.head.appendChild(link);
+            }
 
-          // Populate the grocery list if the grocery-list screen is loaded
-          if (screenName === 'grocery-list') {
-              populateGroceryList();
-          }
-      })
-      .catch(err => {
-          console.error('Screen load error:', err);
-          document.getElementById('screen-container').innerHTML =
-              `<p>Failed to load screen: ${screenName}</p>`;
-      });
+            // Populate the grocery list if the grocery-list screen is loaded
+            if (screenName === 'grocery-list') {
+                populateGroceryList();
+            }
+
+            // Populate the meal plan if the calendar screen is loaded
+            if (screenName === 'calendar') {
+                populateMealPlan('2025-04-28'); // Call after the DOM is updated
+            }
+        })
+        .catch(err => {
+            console.error('Screen load error:', err);
+            document.getElementById('screen-container').innerHTML =
+                `<p>Failed to load screen: ${screenName}</p>`;
+        });
 }
-  
+
 // Global object to store meal plans
 const mealPlans = {
   "2025-04-27": { breakfast: [], lunch: [], dinner: [] },

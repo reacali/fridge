@@ -111,18 +111,7 @@ body {
   font-size: 24px; /* Adjust the font size */
   color: #333; /* Set the text color */
 }
-.v2037_4 {
-  width: 272px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 0px;
-  left: 42px;
-  font-family: Alata;
-  font-weight: Regular;
-  font-size: 24px;
-  opacity: 1;
-  text-align: left;
-}
+
 .v2007_74 {
   width: 44px;
   height: 43px;
@@ -137,6 +126,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
+
 .v2007_75 {
   width: 44px;
   height: 43px;

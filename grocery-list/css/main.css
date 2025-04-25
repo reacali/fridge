@@ -44,7 +44,7 @@ body {
   height: 704px;
   background: rgba(255,255,255,1);
   opacity: 1;
-  position: absolute;
+  position: relative;
   top: 34px;
   left: 0px;
   border: 3px solid rgba(0,0,0,1);
@@ -54,6 +54,7 @@ body {
   border-bottom-right-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+  padding-top: 30px;
 }
 .v2007_70 {
   width: 239px;
@@ -104,35 +105,12 @@ body {
   margin-left: 20px;
 }
 
-/* Styling for the grocery list title */
-.v2007_69 h2 {
-    font-family: 'Alata', sans-serif;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px; /* Add spacing below the title */
-}
-
-/* Styling for the grocery list items */
-.v2007_69 div {
-    display: flex;
-    align-items: center; /* Align bullet and text vertically */
-    margin-bottom: 10px; /* Add spacing between rows */
-}
-
-/* Styling for the bullet (v2037_2) */
-.v2037_2 {
-    width: 20px; /* Fixed width for the bullet */
-    height: 20px; /* Fixed height for the bullet */
-    background-color: #007b77; /* Example bullet color */
-    border-radius: 50%; /* Make the bullet circular */
-}
-
-/* Styling for the text */
 .v2007_69 span {
-    margin-left: 10px; /* Add spacing between the bullet and the text */
-    font-family: 'Alata', sans-serif;
-    font-size: 16px; /* Set font size for the text */
-    color: #333; /* Text color */
+  margin-top: 70px;
+  margin-left: 100px;
+  font-family: 'Alata', sans-serif; /* Change to your desired font */
+  font-size: 24px; /* Adjust the font size */
+  color: #333; /* Set the text color */
 }
 
 .v2007_74 {
@@ -294,4 +272,15 @@ body {
   border-color: rgba(18, 37, 39, 0.7);
   border-width: 5px;
   border-radius: 50%;
+}
+
+.v2007_69 span {
+  position: relative;
+  top: -4px; /* Move the text up by 2 pixels */
+}
+
+.v2007_69 h2 {
+  font-family: 'Alata', sans-serif;
+  font-size: 24px;
+  color: #333;
 }

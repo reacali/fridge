@@ -200,17 +200,9 @@ function populateGroceryList() {
     const title = document.createElement('h2');
     title.textContent = 'Grocery List';
     title.style.textAlign = 'center'; // Center the title
-    title.style.marginBottom = '20px'; // Add spacing below the title
+    title.style.marginBottom = '24px'; // Add spacing below the title
     groceryListContainer.appendChild(title);
 
-    // Check if the grocery list is empty
-    if (groceryList.length === 0) {
-        const emptyMessage = document.createElement('p');
-        emptyMessage.textContent = 'Your grocery list is empty.';
-        emptyMessage.style.textAlign = 'center';
-        groceryListContainer.appendChild(emptyMessage);
-        return;
-    }
 
     // Iterate over the grocery list and create items
     groceryList.forEach(item => {
@@ -220,22 +212,13 @@ function populateGroceryList() {
         itemRow.style.alignItems = 'center'; // Vertically align the text and div
         itemRow.style.marginBottom = '10px'; // Add spacing between rows
 
-        // Create the .v2037_2 div (bullet)
-        const itemContainer = document.createElement('div');
-        itemContainer.classList.add('v2037_2'); // Add the CSS class for the container
-        itemContainer.style.width = '20px'; // Set a fixed width for the bullet
-        itemContainer.style.height = '20px'; // Set a fixed height for the bullet
-        itemContainer.style.backgroundColor = '#007b77'; // Example bullet color
-        itemContainer.style.borderRadius = '50%'; // Make it circular
-
         // Create a span for the item text
         const itemText = document.createElement('span');
         itemText.textContent = item;
-        itemText.style.marginLeft = '10px'; // Add spacing between the bullet and the text
-        itemText.style.fontSize = '16px'; // Set font size for the text
+        itemText.style.marginLeft = '40px'; // Add spacing between the bullet and the text
+        itemText.style.fontSize = '20px'; // Set font size for the text
 
-        // Append the bullet and the text to the parent container
-        itemRow.appendChild(itemContainer);
+
         itemRow.appendChild(itemText);
 
         // Append the parent container to the grocery list container

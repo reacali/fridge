@@ -144,7 +144,7 @@ function populateMealPlan(date) {
                         loadScreen('full-recipe-salad');
                         console.log(`Loading page for meal: ${meal}`);
                     };
-                } else if (meal === 'Grilled Chicken Sandwich') {
+                } else if (meal === 'Chicken Sandwich') {
                     loadButton.onclick = () => {
                         loadScreen('full-recipe-sandwich');
                         console.log(`Loading page for meal: ${meal}`);
